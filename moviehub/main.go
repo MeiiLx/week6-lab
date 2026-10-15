@@ -44,7 +44,7 @@ func main() {
     //log.Fatal(http.ListenAndServe(":8080", mw.Logging(mux)))
     //origins := strings.Split(os.Getenv("ALLOWED_ORIGINS"), ",")
     //log.Println("MovieHub API ฟังอยู่ที่ :8080 ต้อนรับ", origins)
-    log.Fatal(http.ListenAndServe(":8080", mw.Logging(mw.CORS(origins, mux))))
+    //log.Fatal(http.ListenAndServe(":8080", mw.Logging(mw.CORS(origins, mux))))
 
     origins := strings.Split(os.Getenv("ALLOWED_ORIGINS"), ",")
     port := os.Getenv("PORT")
